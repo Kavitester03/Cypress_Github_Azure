@@ -50,7 +50,7 @@ class Admin
 
     setUserName(username)
     {
-        cy.xpath(this.admin_username).type('VWTestUser_kavi03');
+        cy.xpath(this.admin_username).type('VWTestUser_pipeline');
     }
 
     setPassword(password)
@@ -71,7 +71,7 @@ class Admin
     verifyEnteredUser()
     {
         //cy.xpath(this.admin_usertable,{ timeout: 10000 }).contains('VW_TestUser_kavi').should('exist');
-        cy.xpath(this.admin_usertable, { timeout: 10000 }).invoke('text').should('include', 'VWTestUser_kavi03');
+        cy.xpath(this.admin_usertable, { timeout: 10000 }).invoke('text').should('include', 'VWTestUser_pipeline');
 
     }
 }
